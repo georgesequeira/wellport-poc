@@ -1,5 +1,4 @@
 # WellPort POC
-WellPort POC
 
 Welcome! This is a simple POC for WellPort with the following objectives:
 
