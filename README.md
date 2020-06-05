@@ -1,4 +1,4 @@
-# WellPort POC - Work in Progress
+# WellPort POC
 
 Welcome! This is a simple POC for WellPort with the following:
 
