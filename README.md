@@ -7,6 +7,11 @@ Welcome! This is a simple POC for WellPort with the following:
     * History of temperatures taken
     * Listing of Employees
     * Listing of Shifts
+    * Ability to input new temperatures
+
+![image](https://user-images.githubusercontent.com/607097/83925739-eee0f380-a755-11ea-8f39-5f0bcf944907.png)
+![image](https://user-images.githubusercontent.com/607097/83925774-fd2f0f80-a755-11ea-8f82-c6663dd81da3.png)
+![image](https://user-images.githubusercontent.com/607097/83925790-05874a80-a756-11ea-8d85-184c0b1b6215.png)
 
 # Quick Overview
 The dashboard is a react application that leverages [react-admin](https://marmelab.com/react-admin/Readme.html) to avoid re-writing a lot of the common "admin" components of a dashboard. For this POC, we leverage [json-server](https://github.com/typicode/json-server) to quickly provide a REST API with low-hassle. With the checked-in `db.json` file, this makes repeatable testing easy.
