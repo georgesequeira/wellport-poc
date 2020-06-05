@@ -9,9 +9,9 @@ Welcome! This is a simple POC for WellPort with the following:
     * Listing of Shifts
     * Ability to input new temperatures
 
-![image](https://user-images.githubusercontent.com/607097/83925739-eee0f380-a755-11ea-8f39-5f0bcf944907.png)
-![image](https://user-images.githubusercontent.com/607097/83925774-fd2f0f80-a755-11ea-8f82-c6663dd81da3.png)
-![image](https://user-images.githubusercontent.com/607097/83925790-05874a80-a756-11ea-8d85-184c0b1b6215.png)
+| Temperatures | Shifts | Users |
+|---|---|---|
+| ![image](https://user-images.githubusercontent.com/607097/83925739-eee0f380-a755-11ea-8f39-5f0bcf944907.png) | ![image](https://user-images.githubusercontent.com/607097/83925774-fd2f0f80-a755-11ea-8f82-c6663dd81da3.png) | ![image](https://user-images.githubusercontent.com/607097/83925790-05874a80-a756-11ea-8d85-184c0b1b6215.png) |
 
 # Quick Overview
 The dashboard is a react application that leverages [react-admin](https://marmelab.com/react-admin/Readme.html) to avoid re-writing a lot of the common "admin" components of a dashboard. For this POC, we leverage [json-server](https://github.com/typicode/json-server) to quickly provide a REST API with low-hassle. With the checked-in `db.json` file, this makes repeatable testing easy.
@@ -73,16 +73,19 @@ make run-admin
 ![image](https://user-images.githubusercontent.com/607097/83921845-46c72c80-a74d-11ea-9216-b453fc104de6.png)
 
 # Integration Testing
+
 As we are leveraging off-the-shelf components (react-admin, json-server), jest/unit tests aren't as useful. I took the opportunity to introduce my favorite method of integration/end-to-end testing frontend: cypress
 
 Cypress is a front end testing tool that makes it easy to setup/write/run/debug tests. More info: [cypress](https://www.cypress.io/).
 
-In order to see a small taste. Run
-
+To run:
 ```
 cd wellport-poc/
 make run-cypress
 ```
+
+I set it up for a very small use-case:
+![image](https://user-images.githubusercontent.com/607097/83925876-41221480-a756-11ea-81eb-5c9b5957771e.png)
 
 # Where is the API data from?
 The shift/employee data was borrowed from a test account on 7shifts.
